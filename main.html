@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./favicon.ico">
+    <title>Main</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.ulslide.js"></script>
+    <link rel="stylesheet" href="main_style.css">
+</head>
+<body>
+    <div id="container">
+    <div id="header">
+        <div id="logo">LOGO</div>
+        <nav>
+            <ul>
+                <li class="nav01"><a href="#">신상품</a>
+                    <ul class="nav_sub">
+                        <li>신규 5%</li>
+                        <li>이벤트상품</li>
+                    </ul>
+                </li>
+                <li class="nav01"><a href="#">인기상품</a>
+                    <ul class="nav_sub">
+                        <li>신규 5%</li>
+                        <li>이벤트상품</li>
+                    </ul>
+                </li>
+                <li class="nav01"><a href="#">사료</a></li>
+                <li class="nav01"><a href="#">간식</a></li>
+                <li class="nav01"><a href="#">장난감</a></li>
+            
+                <!--로그인 레이어팝업-->
+                <div id="login_icon">L</div>
+                <div id="member_icon">m</div>
+                <input type = "text" id="serch"/>
+                
+                <div class="layer_popup">
+                    <div class="dimBg"></div>
+                    
+                    <form action="index.html" method="post" class="loginForm">
+                    <div id="btn_x">x</div>
+                    <h2>Login</h2>
+                    <div class="idForm">
+                        <input type="text" class="id" placeholder="ID">
+                    </div>
+                    <div class="passForm">
+                        <input type="password" class="pw" placeholder="PW">
+                    </div>
+                    <button type="button" class="btn" onclick="button()">
+                        LOG IN
+                    </button>
+                    
+                    <div class="bottomText">
+                        Don't you have ID? <a href="#">sign up</a>
+                    </div>
+                    </form>
+
+                </div>
+
+            </ul>
+        </nav>
+        
+        
+    </div>
+    
+    <div id="main">
+        <div id="wrap">
+            <ul id="main_bn">
+                    <li>
+                        <img src="./img/image_1.jpg" alt="" />
+                    </li>
+                    <li>
+                        <img src="./img/image_2.jpg" alt="" />
+                    </li>
+                    <li>
+                        <img src="./img/image_3.jpg" alt="" />
+                    </li>
+                    <div id="main_bn_btn">
+                        <span><a href="#"><img src="./img/blt.png"></a></span>
+                        <span><a href="#"><img src="./img/blt.png"></a></span>
+                        <span><a href="#"><img src="./img/blt.png"></a></span>
+                    </div>
+            </ul>
+        </div>
+
+        <div id="contants01">
+            
+                <a href="#" ><div class="conBox" id="conBox01"><img src="./img/contents01.PNG" alt="BOX01" width="320px" height="194" />
+                    <p class="cont_bold">Lorem Ipsum</p>
+                    <p class="cont_re">Lorem Ipsum has been the<br>industry's standard dummy text<br>ever since the 1500s,</p>
+                </div></a>
+                <a href="#"><div class="conBox" id="conBox01"><img src="./img/contents02.PNG" alt="BOX02" width="320px" height="194" />
+                    <p class="cont_bold">Lorem Ipsum</p>
+                    <p class="cont_re">Lorem Ipsum has been the<br>industry's standard dummy text<br>ever since the 1500s,</p>
+                </div></a>
+                <a href="#"><div class="conBox" id="conBox01"><img src="./img/contents03.PNG" alt="BOX03" width="320px" height="194" />
+                    <p class="cont_bold">Lorem Ipsum</p>
+                    <p class="cont_re">Lorem Ipsum has been the<br>industry's standard dummy text<br>ever since the 1500s,</p>
+                
+                </div></a>
+        </div>
+    
+
+    <div id="video01">
+    
+        <div class="vi_txt">
+            <p>What is Lorem Ipsum?</p>
+            <!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>-->
+            <p>Lorem Ipsum has been the industry's <br>
+                standard dummy text ever since the 1500s,<br>
+                when an unknown printer took a galley of type<br>
+                and scrambled it to make a type specimen book.</p>
+        </div>
+        <div class="vi_ytb">
+        <iframe 
+            width="454" height="296" 
+            src="https://www.youtube.com/embed/27sMXwhJnZs" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+        </div>
+        </div>
+    </div>
+    
+    <footer>
+        
+    </footer>
+</div>
+</body>
+<script>
+    $(function() {
+        $('#main_bn').ulslide({
+            statusbar: true,
+            width: 1000,
+            height: 338, 
+            affect: 'slide', 
+            axis: 'x', 	
+            navigator: '#main_bn_btn a',
+            duration: 400, 
+			autoslide: 4000 
+        });
+
+        $('#login_icon').click(function(){
+            //console.log("login_icon 동작 확인");
+            $('.dimBg').css('display','block');
+            $('.loginForm').css('display','block');
+        });
+
+        $('#btn_x').click(function(){
+            $('.dimBg').css('display','none');
+            $('.loginForm').css('display','none');
+        });
+        
+        $(".nav01 a").hover(function () {
+            //console.log("hover 확인");
+            $('ul:eq(0)', this).stop(true, true).animate({
+                height: 'show',
+                opacity: 'show'
+                }, 150);
+            }, function () {
+                $('ul:eq(0)', this).animate({
+                height: 'hide',
+                opacity: 'hide'
+            }, 150);
+})
+
+
+
+
+
+     });
+     
+</script>
+</html>
