@@ -1,0 +1,403 @@
+*{margin: 0 auto;}
+
+#container{
+    width: 1020px;    
+}
+
+#header{
+    height: 60px;
+    background-color: white;
+    padding-top: 45px ;    
+}
+
+#logo{
+    width: 100px;
+    text-align: center;
+    float: left;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#header nav {
+    text-align: center;
+    padding-top: 10px; 
+    overflow: hidden;
+     
+}
+
+
+
+#header .nav01 {
+    list-style: none;
+    float: left;
+    text-align: center;
+    color: #363636; 
+    font-weight: bold;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 11%;
+}
+
+
+
+#header .nav01 a:visited{
+    color: #363636;
+    
+}
+
+#header .nav01:hover{
+    border-bottom: 2px solid rgb(209, 186, 224);
+    padding-bottom: 21px;
+    
+    
+}
+
+.nav01:first-child{
+    margin-left: 50px;
+    
+}
+
+
+
+#nav_sub01 {
+width: 100px;
+
+margin: 0 auto;
+position: relative;
+top: 40px;
+left: 0px;
+z-index: 2;
+font-weight: normal;
+background-color: plum;
+
+
+}
+
+
+
+#serch{
+    width: 148px;
+    border-bottom: solid 1px #333333;
+    height: 21px;
+    float: right;
+    margin-right:34px;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+       
+}
+
+/*로그인 레이어 팝업*/
+#login_icon{
+    width: 34px;
+    height: 34px;
+    background-color: #C4C4C4;
+    float: right;
+    margin-left: 16px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+#member_icon{
+    width: 34px;
+    height: 34px;
+    background-color: #C4C4C4;
+    float: right;
+    text-align: center;
+    cursor: pointer;
+ }
+
+#btn_x{
+    cursor: pointer;   
+    font-size: 25px;
+    float: right;
+    color:#adadad;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+  
+.dimBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .5;
+    filter: alpha(opacity=50);
+    z-index: 1;
+    display: none;
+}
+
+
+.loginForm {
+    position:absolute;
+    width:300px;
+    height:400px;
+    padding: 30px, 20px;
+    background-color:#FFFFFF;
+    text-align:center;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+    z-index: 1;
+    display: none;
+    
+}
+  
+.loginForm h2{
+    text-align: center;
+    margin: 30px;
+}
+  
+.idForm{
+    border-bottom: 2px solid #adadad;
+    margin: 30px;
+    padding: 10px 10px;
+}
+  
+.passForm{
+    border-bottom: 2px solid #adadad;
+    margin: 30px;
+    padding: 10px 10px;
+}
+  
+.id{
+    width: 100%;
+    border:none;
+    outline:none;
+    color: #636e72;
+    font-size:16px;
+    height:25px;
+    background: none;
+}
+  
+.pw{
+    width: 100%;
+    border:none;
+    outline:none;
+    color: #636e72;
+    font-size:16px;
+    height:25px;
+    background: none;
+}
+  
+.btn{
+    position:relative;
+    left:40%;
+    transform: translateX(-50%);
+    margin-bottom: 40px;
+    width:80%;
+    height:40px;
+    background: linear-gradient(125deg,#81ecec,#6c5ce7,#81ecec);
+    background-position: left;
+    background-size: 200%;
+    color:white;
+    font-weight: bold;
+    border:none;
+    cursor:pointer;
+    transition: 0.4s;
+    display:inline;
+}
+
+.btn:hover {
+    background-position: right;
+  }
+  
+  .bottomText {
+    text-align: center;
+  }
+
+
+/* --------------------------------------------------------------------------------------------------  */
+
+
+#main{
+display: inline;
+
+
+}
+
+#wrap{ width:100%; position: absolute;
+    left: 0px;
+    top: 100px;}
+
+a, a:hover, a:visited { text-decoration:none; }
+ul li { list-style : none; }
+
+#main_bn {
+margin:0 auto;
+width:2000;
+height:350px;
+display: block;
+border-top : 1px solid rgb(204, 204, 204);
+
+
+}
+#main_bn img {
+width:100%;
+height:auto;
+}
+#main_bn_btn {
+list-style-type:none;
+position:absolute;
+bottom:4%; left:47%;
+}
+#main_bn_btn span {
+float: left; display:inline-block; width:20px; height:20px; margin-right:10px; 
+}
+
+
+
+#icon_box{
+    
+    position: relative;
+    top: 432px;
+    left: 0;
+    text-align: center;
+}
+
+#icon_box img{
+    
+    margin-right: 7px;
+    border: 3px dotted #FFFFFF ;
+}
+
+#icon_box img:hover{
+    
+    border: 3px dotted #ccc ;
+}
+
+
+#contants01{    
+    width: 100%;
+    height: 480px;
+    position: relative;
+    top: 400px;
+    left: 0;
+}
+
+#contants01 a{
+    text-decoration: none;
+    float: left;
+    margin-top: 60px;    
+}
+
+#contants01 a{
+    list-style: none;
+}
+
+#contants01 a:first-child{
+    float: left;
+}
+
+#contants01 a:nth-child(2){
+    margin-left:28px;
+}
+
+#contants01 a:last-child{
+    float: right;
+}
+
+.conBox{
+    
+    width: 320px;
+    height: 367px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    
+}
+
+.conBox:hover{
+    background-color: black;
+    opacity: 0.8;
+    
+    
+}
+
+.conBox img{
+    
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+    
+}
+
+.cont_bold{
+    text-decoration: none;
+    font-weight: bold;
+    color: #490150;
+    font-size: 24px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+#left_icon{
+    position: relative;
+    top: 655px;
+    left: -50px;
+    
+    font-family:cursive;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(179, 179, 179);
+}
+
+#right_icon{
+    position: relative;
+    top: 655px;
+    left: 1015px;
+    
+    font-family:cursive;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(179, 179, 179);
+}
+
+
+
+
+
+
+
+.cont_re{
+    padding-left: 10px;
+}
+
+#video01{
+    width: 100%;
+    height: 320px;
+    position: relative;
+    left: 0px;
+    bottom: -400px;
+    
+}
+
+.vi_txt{
+    
+    float: left;
+    margin :50px 32px 0px 32px;
+    
+}
+
+.vi_ytb{
+
+    float: right;
+}
+
+/* --------------------------------------------------------------------------------------------------  */
+
+footer{
+    width: 100%;
+    height: 212px;
+    background-color: #4B3856;
+    position: absolute;
+    left: 0px;
+    top: 1480px;
+}
+/* --------------------------------------------------------------------------------------------------  */
